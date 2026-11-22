@@ -1,0 +1,77 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(197, 208, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+#textTask {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#listTask {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    margin: 10px;
+}
+
+#addTask {
+    transition: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#addTask:hover {
+    background-color: rgb(20, 206, 76);
+}
+
+.done {
+    text-decoration: line-through;
+    color: rgb(93, 94, 95);
+
+}
+
+.delete-button {
+    transition: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(145, 4, 4);
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    #addTask {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #textTask {
+        padding: 10px;
+        margin: 5px;
+
+    }
+}
